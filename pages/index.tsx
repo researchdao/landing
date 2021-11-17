@@ -25,7 +25,7 @@ const Index = () => (
                 lineHeight="1.5"
                 margin={10}
             >
-                We fund research related to Cryptography, Security, and Distributed Computing.
+                We fund research in blockchain science.
             </Heading>
             <LearnMoreButton />
         </Center>
