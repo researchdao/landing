@@ -8,14 +8,14 @@ const styles: Styles = {
             fontSmooth: 'auto',
         },
         'html, body': {
-            bg: 'black',
-            color: 'gray.300',
+            bg: colorMode === 'light' ? 'white' : 'black',
+            color: colorMode === 'light' ? 'gray.800' : 'gray.300',
         },
         '*': {
-            borderColor: 'gray.800',
+            borderColor: colorMode === 'light' ? 'gray.300' : 'gray.800',
         },
         '::placeholder': {
-            color: 'gray.500',
+            color: colorMode === 'light' ? 'gray.500' : 'gray.500',
         },
         mark: {
             background: 'none',
@@ -25,10 +25,10 @@ const styles: Styles = {
             textDecoration: 'none',
         },
         '::selection': {
-            bg: 'gray.500',
+            bg: colorMode === 'dark' ? 'gray.500' : 'gray.200',
         },
         '#nprogress .bar': {
-            bg: 'gray.300',
+            bg: colorMode === 'light' ? 'gray.800' : 'gray.300',
         },
     }),
 }
