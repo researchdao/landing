@@ -57,7 +57,7 @@ const overrides = ({
         },
     },
     config: {
-        useSystemColorMode: true,
+        useSystemColorMode: false,
     },
 })
 
