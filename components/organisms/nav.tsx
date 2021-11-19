@@ -45,7 +45,7 @@ const Nav = () => {
                     textTransform="uppercase"
                     borderRadius={0}
                     p={6}
-                    href="https://discord.com"
+                    href="https://discord.gg/YvHxYsZYVn"
                     target="_blank"
                 >
                 Discord
