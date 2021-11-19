@@ -1,6 +1,6 @@
 import React from 'react'
 import {Stack, Button, Heading, Text} from '@chakra-ui/react'
-import {FUNDING_ELIGIBILITY_URL} from '../../constants'
+import {TRAVEL_GRANT_APPLICATION_FORM_URL} from '../../constants'
 
 const ProposalBox = () => {
     return (
@@ -30,9 +30,9 @@ const ProposalBox = () => {
                 bg="rgb(23, 25, 35, 0.8)"
                 w="fit-content"
                 as="a"
-                href={FUNDING_ELIGIBILITY_URL}
+                href={TRAVEL_GRANT_APPLICATION_FORM_URL}
             >
-            Submit a proposal
+            Apply
             </Button>
         </Stack>
     )
