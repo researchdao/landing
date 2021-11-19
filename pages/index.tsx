@@ -2,10 +2,12 @@ import React from 'react'
 import {Center, Heading, Link} from '@chakra-ui/react'
 import Layout from '../components/templates/layout'
 import LearnMoreButton from '../components/atoms/learn-more-button'
+import FundingBox from '../components/organisms/funding-box'
+import ProposalBox from '../components/organisms/proposal-box'
 import {LogoIcon} from '../theme/icons'
 
 const Index = () => (
-    <Layout isLanding={true}>
+    <Layout>
         <Center
             flexDirection="column"
             mx="auto"
@@ -29,6 +31,8 @@ const Index = () => (
             </Heading>
             <LearnMoreButton />
         </Center>
+        <FundingBox />
+        <ProposalBox />
     </Layout>
 )
 

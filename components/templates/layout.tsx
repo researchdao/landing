@@ -1,22 +1,18 @@
 import React, {ReactNode} from 'react'
 import {NextSeo as NextSEO} from 'next-seo'
-import {Box} from '@chakra-ui/react'
 import type {OpenGraph} from 'next-seo/lib/types'
 import {useRouter} from 'next/router'
 import {SITE_TITLE, SITE_DOMAIN} from '../../constants'
 import Footer from '../organisms/footer'
 import Nav from '../organisms/nav'
-import FundingBox from '../organisms/funding-box'
-import ProposalBox from '../organisms/proposal-box'
 
 type LayoutProps = {
     children: ReactNode;
     title?: string;
     description?: string;
-    isLanding: boolean;
 }
 
-const Layout = ({children, title, description, isLanding}: LayoutProps) => {
+const Layout = ({children, title, description}: LayoutProps) => {
     const router = useRouter()
     const url = `https://${SITE_DOMAIN}${router.pathname}`
     const fullTitle = title && `${title} – ${SITE_TITLE}`
@@ -46,16 +42,7 @@ const Layout = ({children, title, description, isLanding}: LayoutProps) => {
             />
             <Nav/>
             <main>{children}</main>
-            <Box>
-                {/* TODO: these boxes should live in pages/index.tsx */}
-                {isLanding ? (
-                    <>
-                        <FundingBox/>
-                        <ProposalBox />
-                    </>
-                ) : null}
-                <Footer/>
-            </Box>
+            <Footer/>
         </>
     )
 }

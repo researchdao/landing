@@ -12,7 +12,6 @@ const Error: NextPage<ErrorProps> = ({status}: ErrorProps) => (
     <Layout
         description={status === 404 ? 'This page got lost in the void.' : 'Not a good place to be in.'}
         title={String(status)}
-        isLanding={false}
     >
         <Center
             flexDirection="column"
