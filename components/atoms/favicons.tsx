@@ -2,15 +2,14 @@ import React from 'react'
 
 const Favicons = () => (
     <>
-        {/*
         <link
-            href="/static/favicons/android-icon-256x256.png"
+            href="/static/favicons/android-chrome-512x512.png"
             rel="icon"
-            sizes="256x256"
+            sizes="512x512"
             type="image/png"
         />
         <link
-            href="/static/favicons/android-icon-192x192.png"
+            href="/static/favicons/android-chrome-192x192.png"
             rel="icon"
             sizes="192x192"
             type="image/png"
@@ -32,11 +31,6 @@ const Favicons = () => (
             sizes="16x16"
             type="image/png"
         />
-        <link
-            color="#f56565"
-            href="/static/favicons/safari-pinned-tab.svg"
-            rel="mask-icon"
-        />*/}
         <link
             href="/static/favicons/favicon.ico"
             rel="icon"
