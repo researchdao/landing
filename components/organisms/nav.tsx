@@ -4,6 +4,7 @@ import {
     Box,
     Flex,
 } from '@chakra-ui/react'
+import NavBarButton from '../atoms/nav-bar-button'
 import {DOCS_URL, DISCORD_INVITE_LINK} from '../../constants'
 
 const Nav = () => {
@@ -23,27 +24,13 @@ const Nav = () => {
                 mx="auto"
                 w={{base: '85%', md: '90%'}}
             >
-                <Button
-                    as="a"
-                    href={DOCS_URL}
-                    letterSpacing="1px"
-                    textTransform="uppercase"
-                    borderRadius={0}
-                    p={6}
-                >
-                Docs
-                </Button>
-                <Button
-                    as="a"
-                    letterSpacing="1px"
-                    textTransform="uppercase"
-                    borderRadius={0}
-                    p={6}
+                <NavBarButton href={DOCS_URL}>Docs</NavBarButton>
+                <NavBarButton
                     href={DISCORD_INVITE_LINK}
                     target="_blank"
                 >
                 Discord
-                </Button>
+                </NavBarButton>
             </Flex>
         </Box>
     )
