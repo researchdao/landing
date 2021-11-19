@@ -1,5 +1,6 @@
 import React from 'react'
 import {Stack, Button, Heading, Text} from '@chakra-ui/react'
+import {FUNDING_ELIGIBILITY_URL} from '../../constants'
 
 const ProposalBox = () => {
     return (
@@ -29,7 +30,7 @@ const ProposalBox = () => {
                 bg="rgb(23, 25, 35, 0.8)"
                 w="fit-content"
                 as="a"
-                href="https://docs.researchdao.io/eligibility"
+                href={FUNDING_ELIGIBILITY_URL}
             >
             Submit a proposal
             </Button>

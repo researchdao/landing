@@ -8,6 +8,7 @@ import {
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Logo from '../atoms/logo'
+import {DOCS_URL, DISCORD_INVITE_LINK} from '../../constants'
 
 const Nav = () => {
     const color = useColorModeValue('gray.700', 'gray.400')
@@ -31,7 +32,7 @@ const Nav = () => {
             >
                 <Button
                     as="a"
-                    href="https://docs.researchdao.io"
+                    href={DOCS_URL}
                     letterSpacing="1px"
                     textTransform="uppercase"
                     borderRadius={0}
@@ -45,7 +46,7 @@ const Nav = () => {
                     textTransform="uppercase"
                     borderRadius={0}
                     p={6}
-                    href="https://discord.gg/YvHxYsZYVn"
+                    href={DISCORD_INVITE_LINK}
                     target="_blank"
                 >
                 Discord

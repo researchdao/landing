@@ -1,5 +1,6 @@
 import React from 'react'
 import {Button} from '@chakra-ui/react'
+import {DOCS_URL} from '../../constants'
 
 const LearnMoreButton = () => {
     return (
@@ -10,7 +11,7 @@ const LearnMoreButton = () => {
             p={6}
             variant="outline"
             as="a" 
-            href="https://docs.researchdao.io"
+            href={DOCS_URL}
         >
             Learn More
         </Button>

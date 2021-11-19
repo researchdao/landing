@@ -14,6 +14,11 @@ import {
 } from '../../theme/icons'
 import Logo from '../atoms/logo'
 import SocialLink from '../atoms/social-link'
+import {
+    GITHUB_URL,
+    TWITTER_URL,
+    EMAIL,
+} from '../../constants'
 
 const Footer = () => {
     return (
@@ -52,20 +57,20 @@ const Footer = () => {
                         w={{base: 'full', md: '25%'}}
                     >
                         <SocialLink
-                            href="https://github.com/researchdao"
+                            href={GITHUB_URL}
                             ml={{md: 4}}
                             name="GitHub"
                         >
                             <GitHubIcon/>
                         </SocialLink>
                         <SocialLink
-                            href="https://twitter.com/researchdao"
+                            href={TWITTER_URL}
                             name="Twitter"
                         >
                             <TwitterIcon/>
                         </SocialLink>
                         <SocialLink
-                            href="mailto:hello@researchdao.io"
+                            href={`mailto:${EMAIL}`}
                             mr={{md: 4}}
                             name="Email"
                         >
