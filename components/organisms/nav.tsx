@@ -1,19 +1,12 @@
 import React from 'react'
 import {
-    Link,
     Button,
     Box,
     Flex,
-    useColorModeValue,
 } from '@chakra-ui/react'
-import NextLink from 'next/link'
-import Logo from '../atoms/logo'
 import {DOCS_URL, DISCORD_INVITE_LINK} from '../../constants'
 
 const Nav = () => {
-    const color = useColorModeValue('gray.700', 'gray.400')
-    const hoverColor = useColorModeValue('gray.500', 'white')
-
     return (
         <Box
             as="nav"
