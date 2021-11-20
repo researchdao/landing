@@ -1,6 +1,6 @@
 const SITE_TITLE = 'Research DAO'
 const SITE_DOMAIN = 'researchdao.io'
-const SITE_DESCRIPTION = 'We fund research related to Cryptography, Security, and Distributed Computing.'
+const SITE_DESCRIPTION = 'We fund research in blockchain science.'
 
 const DOCS_URL = `https://docs.${SITE_DOMAIN}`
 const FUNDING_ELIGIBILITY_URL = DOCS_URL + '/eligibility'
