@@ -1,6 +1,6 @@
 import React from 'react'
-import {Stack, Button, Heading, Text} from '@chakra-ui/react'
-import {TRAVEL_GRANT_APPLICATION_FORM_URL} from '../../constants'
+import {Stack, Button, Heading, Text, Link} from '@chakra-ui/react'
+import {TRAVEL_GRANT_APPLICATION_FORM_URL, DOCS_URL} from '../../constants'
 
 const ProposalBox = () => {
     return (
@@ -21,7 +21,7 @@ const ProposalBox = () => {
             lineHeight="1.5"
         >
             <Heading as="h2" fontSize="2xl">Looking for funding?</Heading>
-            <Text fontSize="lg">We are currently offering travel funding for undergraduate, graduate, and PhD students to participate and present their papers in conferences.</Text>
+            <Text fontSize="lg">We are <Link href={DOCS_URL + '/eligibility'} textDecoration="underline" _hover={{color: 'blue.400'}}>currently offering travel funding</Link> for undergraduate, graduate, and PhD students to participate and present their papers in conferences.</Text>
             <Button
                 color="blue.400"
                 textTransform="uppercase"
