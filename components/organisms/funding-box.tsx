@@ -1,5 +1,6 @@
 import React from 'react'
-import {Stack, Heading, Text, Link, Image} from '@chakra-ui/react'
+import {Stack, Heading, Text, Image} from '@chakra-ui/react'
+import ExternalLink from '../atoms/external-link'
 import {EMAIL} from '../../constants'
 
 const FundingBox = () => {
@@ -19,7 +20,7 @@ const FundingBox = () => {
         >
             <Heading as="h2" fontSize="2xl">Funding partners</Heading>
             <Image src="https://miro.medium.com/max/1400/1*hazuDJPEx9w1g7olSrbt8g.png" alt="Harmony Logo" w="300px" />
-            <Text fontStyle="italic">Interested in becoming a funding partner? <Link href={`mailto:${EMAIL}?subject=We're interested in becoming a funding partner`} textDecoration="underline" _hover={{color: 'blue.400'}} isExternal>Let us know</Link>!</Text>
+            <Text fontStyle="italic">Interested in becoming a funding partner? <ExternalLink href={`mailto:${EMAIL}?subject=We're interested in becoming a funding partner`}>Let us know</ExternalLink>!</Text>
         </Stack>
     )
 }
