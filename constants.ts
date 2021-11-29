@@ -8,7 +8,7 @@ const FUNDING_ELIGIBILITY_URL = DOCS_URL + '/eligibility'
 const TRAVEL_GRANT_APPLICATION_FORM_URL = 'https://forms.gle/7vK1SQadnUzugK25A'
 
 const GITHUB_URL = 'https://github.com/researchdao'
-const TWITTER_URL = 'https://twitter.com/researchdao'
+const TWITTER_URL = 'https://twitter.com/researchdao_io'
 const DISCORD_INVITE_LINK = 'https://discord.gg/YvHxYsZYVn'
 const EMAIL = 'hello@researchdao.io'
 const APPLICATION_EMAIL = ''

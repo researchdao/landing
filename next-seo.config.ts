@@ -23,8 +23,8 @@ const NextSEOConfig = {
         }],
     },
     twitter: {
-        handle: '@nikolaskama',
-        site: '@nikolaskama',
+        handle: '@researchdao_io',
+        site: '@researchdao_io',
         cardType: 'summary_large_image',
     },
 }
