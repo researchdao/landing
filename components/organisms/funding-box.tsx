@@ -19,7 +19,7 @@ const FundingBox = () => {
             lineHeight="1.5"
         >
             <Heading as="h2" fontSize="2xl">Funding partners</Heading>
-            <Image src="https://miro.medium.com/max/1400/1*hazuDJPEx9w1g7olSrbt8g.png" alt="Harmony Logo" w="300px" />
+            <ExternalLink href="https://harmony.one"><Image src="https://miro.medium.com/max/1400/1*hazuDJPEx9w1g7olSrbt8g.png" alt="Harmony Logo" w="300px" /></ExternalLink>
             <Text fontStyle="italic">Interested in becoming a funding partner? <ExternalLink href={`mailto:${EMAIL}?subject=We're interested in becoming a funding partner`}>Let us know</ExternalLink>!</Text>
         </Stack>
     )
