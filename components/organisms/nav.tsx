@@ -5,6 +5,7 @@ import {
     Flex,
 } from '@chakra-ui/react'
 import NavBarButton from '../atoms/nav-bar-button'
+import Banner from '../atoms/banner'
 import {DOCS_URL, DISCORD_INVITE_LINK} from '../../constants'
 
 const Nav = () => {
@@ -12,13 +13,22 @@ const Nav = () => {
         <Box
             as="nav"
             position="fixed"
-            pt={8}
             top={0}
             w="full"
             zIndex={10}
         >
+            <Banner
+                bg='rgb(153, 0, 57)'
+                fontWeight={500}
+                status='warning'
+            >
+                We are suspending our travel grants program
+                until further notice while we seek out new
+                funding for the Research DAO.
+            </Banner>
             <Flex
                 align="center"
+                pt={8}
                 h="full"
                 justify="space-between"
                 mx="auto"
