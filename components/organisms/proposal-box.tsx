@@ -24,6 +24,7 @@ const ProposalBox = () => {
             <Heading as="h2" fontSize="2xl">Looking for funding?</Heading>
             <Text fontSize="lg">We are <ExternalLink href={DOCS_URL + '/eligibility'}>currently offering travel funding</ExternalLink> for undergraduate, graduate, and PhD students to participate and present their papers in conferences.</Text>
             <Button
+                disabled
                 color="blue.400"
                 textTransform="uppercase"
                 borderRadius="xl"
@@ -31,7 +32,7 @@ const ProposalBox = () => {
                 bg="rgb(23, 25, 35, 0.8)"
                 w="fit-content"
                 as="a"
-                href={TRAVEL_GRANT_APPLICATION_FORM_URL}
+                //href={TRAVEL_GRANT_APPLICATION_FORM_URL}
             >
             Apply
             </Button>
